@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: minmax(88px, 88px) minmax(1000px, auto);
+}
+.grid .grid__menu {
+  background: #3684e2;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+}
+.grid .grid__menu .menu__content {
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid .grid__menu .menu__content .content__1 {
+  grid-column: 1;
+  text-align: left;
+}
+.grid .grid__menu .menu__content .content__2 {
+  grid-column: 2;
+  text-align: right;
+}
+.grid .grid__head {
+  background: #e5e5e5;
+  grid-row: 2;
+  width: 100%;
+  height: 100%;
+}
