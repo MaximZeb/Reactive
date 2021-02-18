@@ -131,3 +131,30 @@ html {
     max-width: 1120.13px;
     border: 1px solid #3b4256;
 }
+@media only screen and (max-width:430px) {
+    .content {
+        grid-template-rows: 
+        minmax(250px, 200px)
+        minmax(250px, 200px);
+    }
+    .content .head__content {
+        grid-template-columns: 1fr;
+    }
+    .content .head__content .content__description {
+        grid-column: 1;
+        .description__name {
+            font-size: 1.5em;
+            margin: 25px 0 15px 10px;
+            max-height: 100%;
+        }
+        .description__desc {
+            font-size: 1em;
+            line-height: 20px;
+            margin: 25px 10px 15px 10px;
+            max-height: 100%;
+        }
+    }
+    .content .head__content .content__gerb {
+        display: none;
+    }
+}
