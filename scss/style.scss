@@ -1,5 +1,5 @@
 @import "./zeroing.scss";
-html{
+html {
     font-size: 16px;
 }
 .grid {
@@ -9,15 +9,18 @@ html{
         minmax(1000px, auto);
     nav {
         color: white;
-        font-size: 1,3em;
+        font-size: 1, 3em;
+        font-family: GOST UI 2;
     }
     .grid__menu {
         background: #3684e2;
         grid-row: 1;
         width: 100%;
         height: 100%;
+        font-style: normal;
+        font-weight: normal;
         .menu__content {
-            max-width: 736px;
+            max-width: 1126px;
             margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -28,7 +31,7 @@ html{
                 justify-content: start;
                 align-items: center;
                 margin-left: 10px;
-                .content__left{
+                .content__left {
                     margin-right: 1em;
                     margin-top: 0.4em;
                 }
@@ -40,12 +43,12 @@ html{
                 justify-content: flex-end;
                 align-items: center;
                 margin-top: 0.4em;
-                .content__right{
+                .content__right {
                     margin-right: 1em;
                     img {
-                        filter:grayscale(100%);
-                        -webkit-filter:grayscale(100%);
-}
+                        filter: grayscale(100%);
+                        -webkit-filter: grayscale(100%);
+                    }
                 }
             }
         }
@@ -57,16 +60,74 @@ html{
         height: 100%;
     }
 }
-@media only screen and (max-width:430px) {
-.grid .grid__menu .menu__content .content__2 .content__right {
+@media only screen and (max-width: 430px) {
+    .grid .grid__menu .menu__content .content__2 .content__right {
         display: none;
     }
-.grid .grid__menu .menu__content .content__2 .btn__mobil {
-    display: block;
-}   
+    .grid .grid__menu .menu__content .content__2 .btn__mobil {
+        display: block;
+    }
 }
 .btn__mobil {
     display: none;
     font-size: 5em;
     margin-right: 20px;
+}
+
+.head__content {
+    grid-row: 1;
+}
+.secondary__content {
+    grid-row: 2;
+}
+.content {
+    max-width: 1126px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows:
+        minmax(336px, 336px)
+        minmax(512px, 512px);
+    margin: 0 auto;
+    .head__content {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        .content__description {
+            grid-column: 1;
+            .description__name {
+                margin-top: 64px;
+                margin-bottom: 24px;
+                color: #3b4256;
+                font-size: 3em;
+                max-width: 735.73px;
+                max-height: 112px;
+                font-family: SF Pro Display;
+            }
+            .description__desc {
+                margin-bottom: 40px;
+                font-size: 1.25em;
+                color: #3b4256;
+                max-width: 735.73px;
+                max-height: 96px;
+                line-height: 24px;
+                text-align: justify;
+                font-family: GOST UI 2;
+            }
+        }
+        .content__gerb {
+            grid-column: 2;
+            display: grid;
+            justify-content: start;
+            align-content: center;
+            margin-bottom: 136px;
+            font-family: GOST UI 2;
+            font-size: 0.875em;
+            line-height: 20px;
+            color: #3b4256;
+        }
+    }
+}
+.line {
+    max-width: 1120.13px;
+    border: 1px solid #3b4256;
 }
