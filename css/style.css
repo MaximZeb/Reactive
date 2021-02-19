@@ -149,20 +149,17 @@ html {
   grid-row: 1;
 }
 
-.secondary__content {
-  grid-row: 2;
-}
-
 .content {
   max-width: 1126px;
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: minmax(336px, 336px) minmax(512px, 512px);
+  grid-template-rows: minmax(336px, 336px) minmax(1px, 2px) minmax(512px, 512px);
   margin: 0 auto;
 }
 .content .head__content {
   display: grid;
+  grid-row: 1;
   grid-template-columns: 3fr 1fr;
 }
 .content .head__content .content__description {
@@ -200,13 +197,14 @@ html {
 }
 
 .line {
+  grid-row: 2;
   max-width: 1120.13px;
   border: 1px solid #3b4256;
 }
 
 @media only screen and (max-width: 430px) {
   .content {
-    grid-template-rows: minmax(250px, 200px) minmax(250px, 200px);
+    grid-template-rows: minmax(250px, 200px) minmax(1px, 2px) minmax(250px, 200px);
   }
 
   .content .head__content {
@@ -231,4 +229,81 @@ html {
   .content .head__content .content__gerb {
     display: none;
   }
+}
+.form__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(344px, 334px) minmax(24px, 24px) minmax(80px, 80px) minmax(24px, 24px) minmax(80px, 80px);
+  grid-row: 3;
+  max-width: 736px;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form1 {
+  grid-row: 1;
+  margin-bottom: 24px;
+}
+
+.form_2 {
+  grid-row: 3;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 16px 48px 32px 1fr;
+  grid-template-rows: 80px;
+  justify-items: start;
+  align-items: center;
+}
+
+.form_3 {
+  grid-row: 5;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 16px 48px 32px 1fr;
+  grid-template-rows: 80px;
+  justify-items: start;
+  align-items: center;
+}
+
+.form__circle {
+  grid-column: 2;
+  grid-row: 1;
+  background-color: #bcc3ca;
+  color: #ffffff;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 1.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__data {
+  grid-column: 4;
+  grid-row: 1;
+  color: #bcc3ca;
+  font-family: SF Pro Display;
+  font-size: 1.3em;
+}
+
+.form_1 {
+  grid-row: 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 16px 48px 32px 1fr;
+  background-color: #FFFFFF;
+}
+
+.color_b {
+  background: #0061D9;
+  margin-top: 16px;
 }
