@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.form__content').classList.remove('form__content');
         document.querySelector('.row_1').style.display = 'grid';
         document.querySelector('.form_2').style.display = 'none';
+        document.querySelector('.form_step_2').style.display = 'grid';
     })
 
 

@@ -306,6 +306,15 @@ html {
   font-size: 1.3em;
 }
 
+.form_1 {
+  grid-row: 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 16px 48px 32px 1fr;
+  background-color: #ffffff;
+}
+
 .color_b {
   background: #0061d9;
   margin-top: 16px;
@@ -434,24 +443,107 @@ html {
 }
 
 .form_step_2 {
-  grid-row: 1;
+  grid-row: 3;
   height: 100%;
   width: 100%;
-  display: grid;
+  display: none;
   grid-template-columns: 16px 48px 32px 1fr;
   background-color: #ffffff;
 }
+.form_step_2 input {
+  border: 1px solid rgba(59, 66, 86, 0.5);
+  padding-left: 12px;
+  border-radius: 4px;
+}
 .form_step_2 .form__contetn_1 {
   grid-column: 4;
+  height: 100%;
+  width: 100%;
   display: grid;
-  grid-template-rows: 24px 32px 24px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 24px 24px;
-  grid-template-columns: 1fr;
+  grid-template-rows: 24px 32px 24px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 24px 24px 16px 24px 8px 48px 16px 200px 16px 48px;
   max-width: 448px;
 }
 .form_step_2 .form__contetn_1 .family {
   grid-row: 4;
-  grid-column: 1/-1;
+  grid-column: 1;
 }
 .form_step_2 .form__contetn_1 .famInp {
   grid-row: 6;
+}
+.form_step_2 .form__contetn_1 .name {
+  grid-row: 8;
+}
+.form_step_2 .form__contetn_1 .namInp {
+  grid-row: 10;
+}
+.form_step_2 .form__contetn_1 .patronymic {
+  grid-row: 12;
+}
+.form_step_2 .form__contetn_1 .patronymicInp {
+  grid-row: 14;
+}
+.form_step_2 .form__contetn_1 .email {
+  grid-row: 16;
+}
+.form_step_2 .form__contetn_1 .emailInp {
+  grid-row: 18;
+}
+.form_step_2 .form__contetn_1 .tel {
+  grid-row: 20;
+}
+.form_step_2 .form__contetn_1 .telInp {
+  grid-row: 22;
+}
+.form_step_2 .form__contetn_1 .Document {
+  grid-row: 24;
+}
+.form_step_2 .form__contetn_1 .doc {
+  grid-row: 26;
+}
+.form_step_2 .form__contetn_1 .docInp {
+  grid-row: 28;
+}
+.form_step_2 .form__contetn_1 .pasport__data {
+  grid-row: 30;
+  display: grid;
+  grid-template-rows: 80px 16px 104px;
+}
+.form_step_2 .form__contetn_1 .pasport__data .port__ser {
+  grid-row: 1px;
+  display: grid;
+  grid-template-columns: 160px 44px 256px;
+  grid-template-rows: 24px 8px 48px;
+}
+.form_step_2 .form__contetn_1 .pasport__data .port__ser .pasport__ser {
+  grid-row: 1;
+  grid-column: 1;
+}
+.form_step_2 .form__contetn_1 .pasport__data .port__ser .pasport__nom {
+  grid-row: 1;
+  grid-column: 3;
+}
+.form_step_2 .form__contetn_1 .pasport__data .port__ser .serInp {
+  grid-row: 3;
+  grid-column: 1;
+}
+.form_step_2 .form__contetn_1 .pasport__data .port__ser .nomInp {
+  grid-row: 3;
+  grid-column: 3;
+}
+.form_step_2 .form__contetn_1 .pasport__data .port__ser .Data {
+  grid-row: 3;
+}
+.form_step_2 .form__contetn_1 .btn__form_step2 {
+  background: #0061d9;
+  border-radius: 4px;
+  grid-column: 1;
+  grid-row: 32;
+  color: white;
+  font-family: GOST UI 2;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -239,14 +239,14 @@ html {
     font-family: SF Pro Display;
     font-size: 1.3em;
 }
-// .form_1 {
-//     grid-row: 1;
-//     height: 100%;
-//     width: 100%;
-//     display: grid;
-//     grid-template-columns: 16px 48px 32px 1fr;
-//     background-color: #ffffff;
-// }
+.form_1 {
+    grid-row: 1;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 16px 48px 32px 1fr;
+    background-color: #ffffff;
+}
 .color_b {
     background: #0061d9;
     margin-top: 16px;
@@ -359,25 +359,139 @@ html {
     align-items: center;
 }
 .form_step_2 {
-    grid-row: 1;
+    input {
+        border: 1px solid rgba(59, 66, 86, 0.5);
+        padding-left:12px;
+        border-radius: 4px;
+    }
+    grid-row: 3;
     height: 100%;
     width: 100%;
-    display: grid;
+    display: none;
     grid-template-columns: 16px 48px 32px 1fr;
     background-color: #ffffff;
     .form__contetn_1 {
         grid-column: 4;
+        height: 100%;
+        width: 100%;
         display: grid;
-        grid-template-rows: 24px 32px 24px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 24px 24px;
-        grid-template-columns: 1fr;
+        grid-template-rows:
+            24px
+            32px
+            24px
+            24px
+            8px
+            48px
+            16px
+            24px
+            8px
+            48px
+            16px
+            24px
+            8px
+            48px
+            16px
+            24px
+            8px
+            48px
+            16px
+            24px
+            8px
+            48px
+            24px
+            24px
+            16px
+            24px
+            8px
+            48px
+            16px
+            200px
+            16px
+            48px;
         max-width: 448px;
         .family {
-            grid-row:4;
-            grid-column: 1/-1;
+            grid-row: 4;
+            grid-column: 1;
         }
         .famInp {
             grid-row: 6;
-            
+        }
+        .name {
+            grid-row: 8;
+        }
+        .namInp {
+            grid-row: 10;
+        }
+        .patronymic {
+            grid-row: 12;
+        }
+        .patronymicInp {
+            grid-row: 14;
+        }
+        .email {
+            grid-row: 16;
+        }
+        .emailInp {
+            grid-row: 18;
+        }
+        .tel {
+            grid-row: 20;
+        }
+        .telInp {
+            grid-row: 22;
+        }
+        .Document {
+            grid-row: 24;
+        }
+        .doc {
+            grid-row: 26;
+        }
+        .docInp {
+            grid-row: 28;
+        }
+        .pasport__data {
+            grid-row: 30;
+            display: grid;
+            grid-template-rows: 80px 16px 104px;
+            .port__ser {
+                grid-row: 1px;
+                display: grid;
+                grid-template-columns: 160px 44px 256px;
+                grid-template-rows: 24px 8px 48px;
+                .pasport__ser {
+                    grid-row: 1;
+                    grid-column: 1;
+                }
+                .pasport__nom {
+                    grid-row: 1;
+                    grid-column: 3;
+                }
+                .serInp {
+                    grid-row: 3;
+                    grid-column: 1;
+                }
+                .nomInp {
+                    grid-row: 3;
+                    grid-column: 3;
+                }
+                .Data {
+                    grid-row: 3;
+                }
+            }
+        }
+        .btn__form_step2 {
+            background: #0061d9;
+            border-radius: 4px;
+            grid-column: 1;
+            grid-row: 32;
+            color: white;
+            font-family: GOST UI 2;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.125em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }
