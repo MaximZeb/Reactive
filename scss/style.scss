@@ -86,7 +86,7 @@ html {
     grid-template-rows:
         minmax(336px, 336px)
         minmax(1px, 2px)
-        minmax(512px, 512px);
+        minmax(1fr, 1fr);
     margin: 0 auto;
     .head__content {
         display: grid;
@@ -175,6 +175,21 @@ html {
     justify-content: center;
     align-items: center;
 }
+.form__content_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:
+        minmax(80px, 80px)
+        minmax(24px, 24px)
+        minmax(992px, 992px)
+        minmax(24px, 24px)
+        minmax(80px, 80px);
+    grid-row: 3;
+    max-width: 736px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
 .form1 {
     grid-row: 1;
     margin-bottom: 24px;
@@ -252,14 +267,22 @@ html {
     color: #3b4256;
 }
 .form_profil {
-    grid-row: 4;
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: 18px 20px 18px 1fr;
     grid-template-rows: 16px 20px 6px 18px;
-    border: 2px solid #0061d9;
     border-radius: 4px;
+}
+.row_4 {
+    grid-row: 4;
+    border: 2px solid #0061d9;
+    background-color: #ffffff;
+}
+.row_6 {
+    grid-row: 6;
+    border: none;
+    background: #f5f5f7;
 }
 .form_profil_c {
     grid-column: 2;
@@ -289,8 +312,11 @@ html {
     font-weight: normal;
     font-size: 1.125em;
 }
+.white {
+    border: 2px solid #0061d9;
+    background-color: #ffffff;
+}
 .grey {
-    grid-row: 6;
     border: none;
     background: #f5f5f7;
 }
@@ -310,4 +336,24 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.form__data_b {
+    color: black;
+    font-family: SF Pro Display;
+    font-size: 1.35em;
+    font-weight: bold;
+    grid-column: 4;
+    grid-row: 1;
+}
+.green {
+    background-color: #1bc400;
+}
+.row_1 {
+    grid-row: 1;
+    background-color: #ffffff;
+    display: none;
+    grid-template-columns: 16px 48px 32px 1fr;
+    grid-template-rows: 80px;
+    justify-items: start;
+    align-items: center;
 }
