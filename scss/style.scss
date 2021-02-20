@@ -131,6 +131,7 @@ html {
     grid-row: 2;
     max-width: 1120.13px;
     border: 1px solid #3b4256;
+    height: 2px;
 }
 @media only screen and (max-width: 430px) {
     .content {
@@ -238,14 +239,14 @@ html {
     font-family: SF Pro Display;
     font-size: 1.3em;
 }
-.form_1 {
-    grid-row: 1;
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 16px 48px 32px 1fr;
-    background-color: #ffffff;
-}
+// .form_1 {
+//     grid-row: 1;
+//     height: 100%;
+//     width: 100%;
+//     display: grid;
+//     grid-template-columns: 16px 48px 32px 1fr;
+//     background-color: #ffffff;
+// }
 .color_b {
     background: #0061d9;
     margin-top: 16px;
@@ -356,4 +357,27 @@ html {
     grid-template-rows: 80px;
     justify-items: start;
     align-items: center;
+}
+.form_step_2 {
+    grid-row: 1;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 16px 48px 32px 1fr;
+    background-color: #ffffff;
+    .form__contetn_1 {
+        grid-column: 4;
+        display: grid;
+        grid-template-rows: 24px 32px 24px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 24px 24px;
+        grid-template-columns: 1fr;
+        max-width: 448px;
+        .family {
+            grid-row:4;
+            grid-column: 1/-1;
+        }
+        .famInp {
+            grid-row: 6;
+            
+        }
+    }
 }
