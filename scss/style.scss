@@ -274,6 +274,7 @@ html {
     grid-template-columns: 18px 20px 18px 1fr;
     grid-template-rows: 16px 20px 6px 18px;
     border-radius: 4px;
+    cursor: pointer;
 }
 .row_4 {
     grid-row: 4;
@@ -490,7 +491,7 @@ html {
             display: flex;
             align-items: center;
             justify-content: center;
-            cursor:pointer;
+            cursor: pointer;
         }
     }
 }
@@ -564,15 +565,157 @@ html {
     display: none;
     grid-template-columns: 16px 48px 32px 1fr;
     background-color: #ffffff;
+    .form__contetn_1 {
+        display: grid;
+        grid-template-rows:
+            22px
+            32px
+            24px
+            320px
+            24px
+            176px
+            24px
+            88px
+            16px
+            48px
+            16px
+            48px;
+        .form__contetn__list {
+            grid-row: 4;
+            grid-template-rows: 24px 8px 48px 8px 96px 8px 72px 8px 72px;
+            font-size: 1.125em;
+            line-height: 24px;
+            color: #3b4256;
+            font-family: GOST UI 2;
+            ul {
+                display: grid;
+                grid-template-rows: 24px 8px 48px 8px 76px 8px 72px 8px 52px;
+                grid-template-columns: 426px;  
+            }
+            ul div {
+                grid-row: 1;
+                color: #3B4256;
+                font-weight: bold;
+                grid-column: 1;
+            }
+            ul .li_1 {
+                grid-row: 3;
+                grid-column: 1;
+            }
+            ul .li_2 {
+                grid-row: 5;
+                grid-column: 1;
+            }
+            ul .li_3 {
+                grid-row: 7;
+                grid-column: 1;
+            }
+            ul .li_4 {
+                grid-row: 9;
+                grid-column: 1;
+            }
+        }
+        .form__contetn__chebox {
+            display: grid;
+            grid-row: 6;
+            grid-template-rows:80px 16px 80px;
+            .form__contetn__chebox_1 {
+                display: grid;
+                grid-row: 1;
+                grid-template-columns:18px 20px 10px 350px;
+                grid-template-rows:18px 20px 28px;
+                input {
+                    grid-row: 2;
+                    grid-column: 2;
+                    cursor: pointer;
+                }
+                div {
+                    grid-row: 2;
+                    grid-column: 4;
+                }
+            }
+            .form__contetn__chebox_2 {
+                display: grid;
+                grid-row: 3;
+                grid-template-columns:18px 20px 10px 350px;
+                grid-template-rows:18px 20px 28px;
+                input {
+                    grid-row: 2;
+                    grid-column: 2;
+                    cursor: pointer;
+                }
+                div {
+                    grid-row: 2;
+                    grid-column: 4;
+                }
+            }
+        }
+        .form__contetn__kolokochik {
+            display: grid;
+            grid-row: 8;
+            grid-template-columns: 20px 16px 16px 376px;
+            background: #fff5e6;
+            border-radius: 4px;
+            grid-template-rows: 18px 20px 28px;
+            img {
+                grid-column: 2;
+                grid-row: 2;
+            }
+            div {
+                grid-column: 4;
+                font-family: GOST UI 2;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.126em;
+                line-height: 24px;
+                grid-row: 2 / 3;
+            }
+        }
+        .form__contetn__link {
+            grid-row: 12;
+            color: #3b4256;
+            font-family: GOST UI 2;
+            font-size: 0.875em;
+            line-height: 20px;
+            a {
+                color: #305edd;
+                cursor: pointer;
+            }
+        }
+        .btn__form_step3 {
+            grid-row: 10;
+            background: #0061d9;
+            border-radius: 4px;
+            grid-column: 1;
+            color: white;
+            font-family: GOST UI 2;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.125em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
 }
 .step4 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:
-        minmax(736px, 736px);
+    grid-template-rows: minmax(736px, 736px);
     grid-row: 3;
     max-width: 736px;
     margin-top: 40px;
     justify-content: center;
     align-items: center;
+}
+@media only screen and (max-width: 1070px) {
+    .content {
+        margin-left: 10px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .content {
+        margin-left: 0px;
+    }
 }

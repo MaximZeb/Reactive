@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     pasport.addEventListener('click', step2);
 // шаг 3 отправка после всей формы 
-const step4_btn = document.querySelector('.btn__form__step3');
+const step4_btn = document.querySelector('.btn__form_step3');
 
 function stepFour () {
     document.querySelector('.step3').classList.add('step4');
