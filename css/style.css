@@ -530,9 +530,6 @@ html {
   grid-row: 3;
   grid-column: 3;
 }
-.form_step_2 .form__contetn_1 .pasport__data .port__ser .Data {
-  grid-row: 3;
-}
 .form_step_2 .form__contetn_1 .btn__form_step2 {
   background: #0061d9;
   border-radius: 4px;
@@ -546,4 +543,42 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.Data {
+  grid-row: 3;
+  grid-column: 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 120px 16px 120px 16px 176px;
+  grid-template-rows: 24px 24px 8px 48px;
+}
+.Data .Data_where {
+  grid-row: 1;
+  grid-column: 1;
+}
+.Data .Data__m {
+  grid-row: 2;
+  grid-column: 3;
+}
+.Data .Data__y {
+  grid-row: 2;
+  grid-column: 5;
+}
+.Data .Data__d {
+  grid-row: 2;
+  grid-column: 1;
+}
+.Data .Data__day {
+  grid-row: 4;
+  grid-column: 1;
+}
+.Data .Data__month {
+  grid-row: 4;
+  grid-column: 3;
+}
+.Data .Data__yarh {
+  grid-row: 4;
+  grid-column: 5;
 }

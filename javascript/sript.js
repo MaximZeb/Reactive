@@ -31,9 +31,15 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.form_2').style.display = 'none';
         document.querySelector('.form_step_2').style.display = 'grid';
     })
+    // Шаг 2 отправка после формы паспорта
+    const pasport = document.querySelector('.btn__form_step2');
+    const formStep2 = document.querySelector('.form_step_2');
+    
+    function step2() {
+        formStep2.style.display = 'none';
+    }
 
-
-
+    pasport.addEventListener('click', step2);
 
 
 
