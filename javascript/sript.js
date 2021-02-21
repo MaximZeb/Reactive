@@ -35,13 +35,26 @@ document.addEventListener('DOMContentLoaded', function () {
     const pasport = document.querySelector('.btn__form_step2');
     const formStep2 = document.querySelector('.form_step_2');
     
+
     function step2() {
+        document.querySelector('.form_3').style.display = 'none';
         formStep2.style.display = 'none';
+        document.querySelector('.form__content_1').classList.add('step3');
+        document.querySelector('.step3').classList.remove('form__content_1');
+        document.querySelector('.row_2_step').style.display = 'grid';
+        document.querySelector('.conset__step3').style.display = 'grid';
     }
 
     pasport.addEventListener('click', step2);
+// шаг 3 отправка после всей формы 
+const step4_btn = document.querySelector('.btn__form__step3');
 
+function stepFour () {
+    document.querySelector('.step3').classList.add('step4');
+    document.querySelector('.step4').classList.remove('step3');
+}
 
+step4_btn.addEventListener('click', stepFour);
 
 })
 

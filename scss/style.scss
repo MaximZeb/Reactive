@@ -337,6 +337,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .form__data_b {
     color: black;
@@ -361,7 +362,7 @@ html {
 .form_step_2 {
     input {
         border: 1px solid rgba(59, 66, 86, 0.5);
-        padding-left:12px;
+        padding-left: 12px;
         border-radius: 4px;
     }
     grid-row: 3;
@@ -474,7 +475,6 @@ html {
                     grid-row: 3;
                     grid-column: 3;
                 }
-                
             }
         }
         .btn__form_step2 {
@@ -490,43 +490,89 @@ html {
             display: flex;
             align-items: center;
             justify-content: center;
+            cursor:pointer;
         }
     }
 }
 .Data {
-                    grid-row: 3;
-                    grid-column: 1;
-                    height: 100%;
-                    width: 100%;
-                    display: grid;
-                    grid-template-columns:120px 16px 120px 16px 176px;
-                    grid-template-rows: 24px 24px 8px 48px;
-                    .Data_where {
-                        grid-row: 1;
-                        grid-column: 1;
-                    }
-                    .Data__m {
-                        grid-row: 2;
-                        grid-column: 3;
-                    }
-                    .Data__y {
-                        grid-row: 2;
-                        grid-column: 5;
-                    }
-                    .Data__d {
-                        grid-row: 2;
-                        grid-column: 1;
-                    }
-                    .Data__day {
-                        grid-row: 4;
-                        grid-column: 1;
-                    }
-                    .Data__month {
-                        grid-row: 4;
-                        grid-column: 3;
-                    }
-                    .Data__yarh {
-                        grid-row: 4;
-                        grid-column: 5;
-                    }
-                }
+    grid-row: 3;
+    grid-column: 1;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 120px 16px 120px 16px 176px;
+    grid-template-rows: 24px 24px 8px 48px;
+    .Data_where {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .Data__m {
+        grid-row: 2;
+        grid-column: 3;
+    }
+    .Data__y {
+        grid-row: 2;
+        grid-column: 5;
+    }
+    .Data__d {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .Data__day {
+        grid-row: 4;
+        grid-column: 1;
+    }
+    .Data__month {
+        grid-row: 4;
+        grid-column: 3;
+    }
+    .Data__yarh {
+        grid-row: 4;
+        grid-column: 5;
+    }
+}
+
+.step3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:
+        minmax(80px, 80px)
+        minmax(24px, 24px)
+        minmax(80px, 80px)
+        minmax(24px, 24px)
+        minmax(854px, 854px);
+    grid-row: 3;
+    max-width: 736px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.row_2_step {
+    grid-row: 3;
+    background-color: #ffffff;
+    display: none;
+    grid-template-columns: 16px 48px 32px 1fr;
+    grid-template-rows: 80px;
+    justify-items: start;
+    align-items: center;
+}
+.conset__step3 {
+    display: none;
+    grid-row: 5;
+    height: 100%;
+    width: 100%;
+    display: none;
+    grid-template-columns: 16px 48px 32px 1fr;
+    background-color: #ffffff;
+}
+.step4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:
+        minmax(736px, 736px);
+    grid-row: 3;
+    max-width: 736px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
