@@ -631,7 +631,7 @@ html {
 }
 .conset__step3 .form__contetn_1 .form__contetn__list ul div {
   grid-row: 1;
-  color: #3B4256;
+  color: #3b4256;
   font-weight: bold;
   grid-column: 1;
 }
@@ -655,36 +655,6 @@ html {
   display: grid;
   grid-row: 6;
   grid-template-rows: 80px 16px 80px;
-}
-.conset__step3 .form__contetn_1 .form__contetn__chebox .form__contetn__chebox_1 {
-  display: grid;
-  grid-row: 1;
-  grid-template-columns: 18px 20px 10px 350px;
-  grid-template-rows: 18px 20px 28px;
-}
-.conset__step3 .form__contetn_1 .form__contetn__chebox .form__contetn__chebox_1 input {
-  grid-row: 2;
-  grid-column: 2;
-  cursor: pointer;
-}
-.conset__step3 .form__contetn_1 .form__contetn__chebox .form__contetn__chebox_1 div {
-  grid-row: 2;
-  grid-column: 4;
-}
-.conset__step3 .form__contetn_1 .form__contetn__chebox .form__contetn__chebox_2 {
-  display: grid;
-  grid-row: 3;
-  grid-template-columns: 18px 20px 10px 350px;
-  grid-template-rows: 18px 20px 28px;
-}
-.conset__step3 .form__contetn_1 .form__contetn__chebox .form__contetn__chebox_2 input {
-  grid-row: 2;
-  grid-column: 2;
-  cursor: pointer;
-}
-.conset__step3 .form__contetn_1 .form__contetn__chebox .form__contetn__chebox_2 div {
-  grid-row: 2;
-  grid-column: 4;
 }
 .conset__step3 .form__contetn_1 .form__contetn__kolokochik {
   display: grid;
@@ -737,7 +707,7 @@ html {
 .step4 {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(736px, 736px);
+  grid-template-rows: minmax(328px, 328px);
   grid-row: 3;
   max-width: 736px;
   margin-top: 40px;
@@ -754,4 +724,129 @@ html {
   .content {
     margin-left: 0px;
   }
+}
+.greyBor {
+  border: 2px solid #0061d9;
+  background-color: #ffffff;
+}
+
+.form__contetn__chebox_1 {
+  display: grid;
+  grid-row: 1;
+  grid-template-columns: 18px 20px 10px 350px;
+  grid-template-rows: 18px 20px 28px;
+  border-radius: 4px;
+  background-color: #f5f5f7;
+}
+.form__contetn__chebox_1 input {
+  grid-row: 2;
+  grid-column: 2;
+  cursor: pointer;
+  background: #0061d9;
+}
+.form__contetn__chebox_1 div {
+  grid-row: 2;
+  grid-column: 4;
+}
+
+.form__contetn__chebox_2 {
+  display: grid;
+  grid-row: 3;
+  grid-template-columns: 18px 20px 10px 350px;
+  grid-template-rows: 18px 20px 28px;
+  border-radius: 4px;
+  background-color: #f5f5f7;
+}
+.form__contetn__chebox_2 input {
+  grid-row: 2;
+  grid-column: 2;
+  cursor: pointer;
+}
+.form__contetn__chebox_2 div {
+  grid-row: 2;
+  grid-column: 4;
+}
+
+input[type=checkbox]:checked ~ .form__contetn__chebox_1 {
+  border: 2px solid #0061d9;
+  background-color: #ffffff;
+}
+
+input[type=checkbox]:checked ~ .form__contetn__chebox_2 {
+  border: 2px solid #0061d9;
+  background-color: #ffffff;
+}
+
+.zayvka {
+  display: none;
+  grid-row: 1;
+  grid-column: 1;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 16px 48px 32px 256px 32px 256px 96px;
+  grid-template-rows: 24px 32px 16px 144px 24px 48px;
+  background-color: #ffffff;
+}
+.zayvka .form__circle {
+  margin-top: 16px;
+}
+.zayvka .form__data_b {
+  grid-row: 2;
+  grid-column: 4/5;
+}
+.zayvka .zayvka__desc {
+  grid-row: 4;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  width: 100%;
+  font-family: GOST UI 2;
+  font-size: 1.125em;
+  line-height: 24px;
+  color: #3b4256;
+}
+.zayvka .zayvka__desc a {
+  color: #0061d9;
+  cursor: pointer;
+}
+.zayvka .zayvka__desc .desc_1 .desc_1_span {
+  color: black;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.zayvka .btn__katalog {
+  grid-row: 6;
+  grid-column: 4;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0061d9;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: GOST UI 2;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125em;
+  cursor: pointer;
+}
+.zayvka .btn__katalog a {
+  color: #ffffff;
+}
+.zayvka .btn__lich {
+  grid-row: 6;
+  grid-column: 6;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-family: GOST UI 2;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125em;
+  border: 1px solid rgba(0, 80, 178, 0.5);
+  cursor: pointer;
+}
+.zayvka .btn__lich a {
+  color: #000000;
 }

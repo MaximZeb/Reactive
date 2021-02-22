@@ -48,10 +48,48 @@ document.addEventListener('DOMContentLoaded', function () {
     pasport.addEventListener('click', step2);
 // шаг 3 отправка после всей формы 
 const step4_btn = document.querySelector('.btn__form_step3');
+let chec1 = document.querySelector('.check1');
+let chec2 = document.querySelector('.check2');
+const ch1 = document.querySelector('.form__contetn__chebox_1');
+const ch2 = document.querySelector('.form__contetn__chebox_2');
+
+function bor1 () {
+    ch1.classList.add('greyBor');
+}
+function bor12 () {
+    ch1.classList.remove('greyBor');
+}
+function bor21 () {
+    ch2.classList.add('greyBor');
+}
+function bor2 () {
+    ch2.classList.remove('greyBor');
+}
+chec1.addEventListener('click', bor1);
+chec1.removeEventListener('click', bor12);
+
+
+
+
+if(chec1.checked) {
+    bor1 ();
+} else {
+    bor12 ();
+}
+
+if(chec2.checked) {
+    ch2.classList.add('greyBor');
+} else {
+    ch2.classList.remove('greyBor');
+}
 
 function stepFour () {
     document.querySelector('.step3').classList.add('step4');
     document.querySelector('.step4').classList.remove('step3');
+    document.querySelector('.row_1').style.display = 'none';
+    document.querySelector('.row_2_step').style.display = 'none';
+    document.querySelector('.conset__step3').style.display = 'none';
+    document.querySelector('.zayvka').style.display = 'grid';
 }
 
 step4_btn.addEventListener('click', stepFour);
