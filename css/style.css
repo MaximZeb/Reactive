@@ -207,6 +207,7 @@ html {
   max-width: 1120.13px;
   border: 1px solid #3b4256;
   height: 2px;
+  opacity: 0.3;
 }
 
 @media only screen and (max-width: 430px) {
@@ -478,7 +479,7 @@ html {
   display: grid;
   grid-template-rows: 24px 32px 24px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 24px 24px 16px 24px 8px 48px 16px 200px 16px 48px;
   max-width: 448px;
-  color: #3B4256;
+  color: #3b4256;
 }
 .form_step_2 .form__contetn_1 .family {
   grid-row: 4;
@@ -509,7 +510,7 @@ html {
 }
 .form_step_2 .form__contetn_1 .telInp {
   grid-row: 22;
-  color: #3B4256;
+  color: #3b4256;
 }
 .form_step_2 .form__contetn_1 .Document {
   grid-row: 24;
@@ -517,7 +518,7 @@ html {
 }
 .form_step_2 .form__contetn_1 .doc {
   grid-row: 26;
-  color: #3B4256;
+  color: #3b4256;
 }
 .form_step_2 .form__contetn_1 .docInp {
   grid-row: 28;
@@ -536,22 +537,22 @@ html {
 .form_step_2 .form__contetn_1 .pasport__data .port__ser .pasport__ser {
   grid-row: 1;
   grid-column: 1;
-  color: #3B4256;
+  color: #3b4256;
 }
 .form_step_2 .form__contetn_1 .pasport__data .port__ser .pasport__nom {
   grid-row: 1;
   grid-column: 3;
-  color: #3B4256;
+  color: #3b4256;
 }
 .form_step_2 .form__contetn_1 .pasport__data .port__ser .serInp {
   grid-row: 3;
   grid-column: 1;
-  color: #3B4256;
+  color: #3b4256;
 }
 .form_step_2 .form__contetn_1 .pasport__data .port__ser .nomInp {
   grid-row: 3;
   grid-column: 3;
-  color: #3B4256;
+  color: #3b4256;
 }
 .form_step_2 .form__contetn_1 .btn__form_step2 {
   background: #0061d9;
@@ -577,42 +578,42 @@ html {
   display: grid;
   grid-template-columns: 120px 16px 120px 16px 176px;
   grid-template-rows: 24px 24px 8px 48px;
-  color: #3B4256;
+  color: #3b4256;
 }
 .Data .Data_where {
   grid-row: 1;
   grid-column: 1;
-  color: #3B4256;
+  color: #3b4256;
 }
 .Data .Data__m {
   grid-row: 2;
   grid-column: 3;
-  color: #848E99;
+  color: #848e99;
 }
 .Data .Data__y {
   grid-row: 2;
   grid-column: 5;
-  color: #848E99;
+  color: #848e99;
 }
 .Data .Data__d {
   grid-row: 2;
   grid-column: 1;
-  color: #848E99;
+  color: #848e99;
 }
 .Data .Data__day {
   grid-row: 4;
   grid-column: 1;
-  color: #3B4256;
+  color: #3b4256;
 }
 .Data .Data__month {
   grid-row: 4;
   grid-column: 3;
-  color: #3B4256;
+  color: #3b4256;
 }
 .Data .Data__yarh {
   grid-row: 4;
   grid-column: 5;
-  color: #3B4256;
+  color: #3b4256;
 }
 
 .step3 {
@@ -737,6 +738,77 @@ html {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 430px) {
+  .step3 {
+    grid-template-rows: minmax(80px, 80px) minmax(24px, 24px) minmax(80px, 80px) minmax(24px, 24px) minmax(854px, 1fr);
+  }
+
+  .conset__step3 {
+    grid-template-columns: 16px 16px 48px 32px 1fr;
+  }
+
+  .conset__step3 .form__contetn_1 {
+    max-width: 290px;
+    grid-template-rows: 1px 1px 24px 1fr 24px 250px 1px 140px 16px 48px 16px 48px;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row: 5;
+  }
+
+  .conset__step3 .Name_mobil_step3 {
+    display: block;
+    grid-column: 4;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #3b4256;
+    margin-top: 26px;
+  }
+
+  .conset__step3 .form__contetn_1 .btn__form_step3 {
+    max-width: 270px;
+  }
+
+  .conset__step3 .form__contetn_1 .form__contetn__kolokochik {
+    max-width: 270px;
+  }
+
+  .conset__step3 .form__contetn_1 .form__contetn__kolokochik div {
+    max-width: 180px;
+  }
+
+  .conset__step3 .form__contetn_1 .form__contetn__list {
+    max-width: 320px;
+  }
+
+  .conset__step3 .form__contetn_1 .form__contetn__list ul {
+    grid-template-rows: 44px 8px 80px 8px 1fr 8px 1fr 8px 80px;
+    grid-template-columns: 270px;
+  }
+
+  .conset__step3 .form__contetn_1 .Name {
+    display: none;
+  }
+
+  .conset__step3 .form__contetn_1 .form__contetn__chebox {
+    grid-template-rows: 110px 16px 110px;
+    grid-template-columns: 270px;
+  }
+
+  .form__contetn__chebox_1 {
+    max-width: 270px;
+    grid-template-columns: 18px 20px 10px 270px;
+  }
+
+  .form__contetn__chebox_1 div {
+    max-width: 200px;
+  }
+
+  .form__contetn__chebox_2 div {
+    max-width: 200px;
+  }
+}
 .step4 {
   display: grid;
   grid-template-columns: 1fr;
@@ -746,6 +818,11 @@ html {
   margin-top: 40px;
 }
 
+@media only screen and (max-width: 430px) {
+  .step4 {
+    grid-template-rows: minmax(1fr, 1fr);
+  }
+}
 @media only screen and (max-width: 1070px) {
   .content {
     margin-left: 10px;
@@ -999,4 +1076,36 @@ input[type=checkbox]:before {
 input[type=checkbox]:checked:before {
   background: #0061d9 !important;
   color: white !important;
+}
+
+@media only screen and (max-width: 430px) {
+  .zayvka {
+    display: none;
+    grid-row: 1;
+    grid-column: 1;
+    height: 500px;
+    width: 100%;
+    max-width: 320px;
+    grid-template-columns: 10px 48px 32px 216px 10px;
+    grid-template-rows: 24px 32px 26px 240px 16px 48px 16px 48px 16px;
+    background-color: #ffffff;
+  }
+  .zayvka .zayvka__desc {
+    grid-row: 4;
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+  .zayvka .btn__katalog {
+    grid-row: 6;
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+  .zayvka .btn__lich {
+    grid-row: 8;
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+}
+.Name_mobil_step3 {
+  display: none;
 }
