@@ -1,4 +1,12 @@
 @import "./zeroing.scss";
+@font-face {
+    font-family: "San Francisco Pro";
+    src: local("San Francisco Pro Display Bold"), local("San-Francisco-Pro-Display-Bold"),
+        url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff"),
+        url("../fonts/SFProDisplay-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
 html {
     font-size: 16px;
 }
@@ -10,7 +18,7 @@ html {
     nav {
         color: white;
         font-size: 1, 3em;
-        font-family: GOST UI 2;
+        font-family: "GOST UI 2";
     }
     .grid__menu {
         background: #3684e2;
@@ -48,6 +56,9 @@ html {
                     img {
                         filter: grayscale(100%);
                         -webkit-filter: grayscale(100%);
+                    }
+                    a {
+                        color: rgb(255, 255, 255);
                     }
                 }
             }
@@ -101,7 +112,7 @@ html {
                 font-size: 3em;
                 max-width: 735.73px;
                 max-height: 112px;
-                font-family: SF Pro Display;
+                font-family: "San Francisco Pro";
             }
             .description__desc {
                 margin-bottom: 40px;
@@ -111,7 +122,7 @@ html {
                 max-height: 96px;
                 line-height: 24px;
                 text-align: justify;
-                font-family: GOST UI 2;
+                font-family: "GOST UI 2";
             }
         }
         .content__gerb {
@@ -120,7 +131,7 @@ html {
             justify-content: start;
             align-content: center;
             margin-bottom: 136px;
-            font-family: GOST UI 2;
+            font-family: "GOST UI 2";
             font-size: 0.875em;
             line-height: 20px;
             color: #3b4256;
@@ -136,7 +147,7 @@ html {
 @media only screen and (max-width: 430px) {
     .content {
         grid-template-rows:
-            minmax(250px, 200px)
+            minmax(300px, 250px)
             minmax(1px, 2px)
             minmax(250px, 200px);
     }
@@ -191,6 +202,7 @@ html {
     justify-content: center;
     align-items: center;
 }
+
 .form1 {
     grid-row: 1;
     margin-bottom: 24px;
@@ -226,7 +238,7 @@ html {
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
     text-align: center;
-    font-family: SF Pro Display;
+    font-family: "San Francisco Pro";
     font-size: 1.4em;
     display: flex;
     justify-content: center;
@@ -236,7 +248,7 @@ html {
     grid-column: 4;
     grid-row: 1;
     color: #bcc3ca;
-    font-family: SF Pro Display;
+    font-family: "San Francisco Pro";
     font-size: 1.3em;
 }
 .form_1 {
@@ -261,7 +273,7 @@ html {
 .Name {
     grid-column: 1;
     grid-row: 2;
-    font-family: SF Pro Display;
+    font-family: "San Francisco Pro";
     font-style: normal;
     font-weight: bold;
     font-size: 1.3em;
@@ -301,7 +313,7 @@ html {
 .form_profil_N {
     grid-row: 2;
     grid-column: 4;
-    font-family: GOST UI 2;
+    font-family: "GOST UI 2";
     font-style: normal;
     font-weight: bold;
     font-size: 1.125em;
@@ -309,7 +321,7 @@ html {
 .form_profil_f {
     grid-row: 4;
     grid-column: 4;
-    font-family: GOST UI 2;
+    font-family: "GOST UI 2";
     font-style: normal;
     font-weight: normal;
     font-size: 1.125em;
@@ -331,7 +343,7 @@ html {
     grid-column: 1;
     grid-row: 8;
     color: white;
-    font-family: GOST UI 2;
+    font-family: "GOST UI 2";
     font-style: normal;
     font-weight: normal;
     font-size: 1.125em;
@@ -342,7 +354,7 @@ html {
 }
 .form__data_b {
     color: black;
-    font-family: SF Pro Display;
+    font-family: "San Francisco Pro";
     font-size: 1.35em;
     font-weight: bold;
     grid-column: 4;
@@ -413,7 +425,6 @@ html {
         max-width: 448px;
         .family {
             grid-row: 4;
-            grid-column: 1;
         }
         .famInp {
             grid-row: 6;
@@ -456,7 +467,7 @@ html {
             display: grid;
             grid-template-rows: 80px 16px 104px;
             .port__ser {
-                grid-row: 1px;
+                grid-row: 1;
                 display: grid;
                 grid-template-columns: 160px 44px 256px;
                 grid-template-rows: 24px 8px 48px;
@@ -484,7 +495,7 @@ html {
             grid-column: 1;
             grid-row: 32;
             color: white;
-            font-family: GOST UI 2;
+            font-family: "GOST UI 2";
             font-style: normal;
             font-weight: normal;
             font-size: 1.125em;
@@ -586,10 +597,10 @@ html {
             font-size: 1.125em;
             line-height: 24px;
             color: #3b4256;
-            font-family: GOST UI 2;
+            font-family: "GOST UI 2";
             ul {
                 display: grid;
-                grid-template-rows: 24px 8px 48px 8px 76px 8px 72px 8px 52px;
+                grid-template-rows: 24px 8px 48px 8px 96px 8px 72px 8px 52px;
                 grid-template-columns: 426px;
             }
             ul div {
@@ -633,7 +644,7 @@ html {
             }
             div {
                 grid-column: 4;
-                font-family: GOST UI 2;
+                font-family: "GOST UI 2";
                 font-style: normal;
                 font-weight: normal;
                 font-size: 1.126em;
@@ -644,7 +655,7 @@ html {
         .form__contetn__link {
             grid-row: 12;
             color: #3b4256;
-            font-family: GOST UI 2;
+            font-family: "GOST UI 2";
             font-size: 0.875em;
             line-height: 20px;
             a {
@@ -658,7 +669,7 @@ html {
             border-radius: 4px;
             grid-column: 1;
             color: white;
-            font-family: GOST UI 2;
+            font-family: "GOST UI 2";
             font-style: normal;
             font-weight: normal;
             font-size: 1.125em;
@@ -689,10 +700,7 @@ html {
         margin-left: 0px;
     }
 }
-.greyBor {
-    border: 2px solid #0061d9;
-    background-color: #ffffff;
-}
+
 .form__contetn__chebox_1 {
     display: grid;
     grid-row: 1;
@@ -728,11 +736,11 @@ html {
         grid-column: 4;
     }
 }
-input[type="checkbox"]:checked ~ .form__contetn__chebox_1 {
+.check1:checked {
     border: 2px solid #0061d9;
     background-color: #ffffff;
 }
-input[type="checkbox"]:checked ~ .form__contetn__chebox_2 {
+.check1:checked ~ * .form__contetn__chebox_2 {
     border: 2px solid #0061d9;
     background-color: #ffffff;
 }
@@ -757,7 +765,7 @@ input[type="checkbox"]:checked ~ .form__contetn__chebox_2 {
         grid-column-start: 4;
         grid-column-end: 7;
         width: 100%;
-        font-family: GOST UI 2;
+        font-family: "GOST UI 2";
         font-size: 1.125em;
         line-height: 24px;
         color: #3b4256;
@@ -783,7 +791,7 @@ input[type="checkbox"]:checked ~ .form__contetn__chebox_2 {
         background: #0061d9;
         border-radius: 4px;
         color: #ffffff;
-        font-family: GOST UI 2;
+        font-family: "GOST UI 2";
         font-style: normal;
         font-weight: normal;
         font-size: 1.125em;
@@ -800,7 +808,7 @@ input[type="checkbox"]:checked ~ .form__contetn__chebox_2 {
         justify-content: center;
         align-items: center;
         border-radius: 4px;
-        font-family: GOST UI 2;
+        font-family: "GOST UI 2";
         font-style: normal;
         font-weight: normal;
         font-size: 1.125em;
@@ -810,4 +818,89 @@ input[type="checkbox"]:checked ~ .form__contetn__chebox_2 {
             color: #000000;
         }
     }
+}
+@media only screen and (max-width: 770px) {
+    .content .head__content .content__gerb {
+        display: none;
+    }
+}
+.usluga {
+    font-family: "GOST UI 2";
+    font-size: 0.8em;
+    line-height: 20px;
+    font-weight: bold;
+}
+.organ {
+    font-family: "GOST UI 2";
+    font-size: 0.8em;
+    line-height: 20px;
+}
+@media only screen and (max-width: 430px) {
+    .form_1 {
+        grid-template-columns: 16px 48px 16px 1fr 16px;
+        .form__contetn_1 {
+            grid-column: 2 / 5;
+            grid-template-rows: 24px 1px 1px 80px 16px 80px 16px 48px;
+            
+        }
+        .Name_mobil {
+            display: block;
+        }
+    }
+    .form_step_2 {
+        grid-template-columns: 16px 48px 16px 1fr 16px;
+        max-width: 340px;
+    }
+    .form_step_2 .form__contetn_1 {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        max-width: 320px;
+        grid-template-rows: 24px 1px 1px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 24px 24px 16px 24px 8px 48px 16px 404px 16px 48px;
+        .Name {
+            display: none;
+        }
+    }
+    .form__content_1 {
+        max-width: 340px;
+        grid-template-rows: minmax(80px, 80px) minmax(24px, 24px) minmax(1140px, 1140px) minmax(24px, 24px) minmax(80px, 80px);
+    }
+    .form_step_2 .form__contetn_1 .pasport__data {
+        grid-row: 30;
+        display: grid;
+        grid-template-rows: 160px 16px 104px;
+        .form_step_2 .form__contetn_1 .pasport__data .port__ser {
+            grid-row: 1;
+            display: grid;
+            grid-template-columns: 1fr 16px;
+            grid-template-rows: 24px 8px 48px 24px 8px 48px;
+            .form_step_2 .form__contetn_1 .pasport__data .port__ser .pasport__nom {
+                grid-row: 4;
+                grid-column: 1;
+            }
+            .form_step_2 .form__contetn_1 .pasport__data .port__ser .nomInp {
+                grid-row: 6;
+                grid-column: 1;
+            }
+}
+}
+}
+.Name_mobil {
+    display: none;
+    grid-column: 4;
+    grid-row: 1;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #3b4256;
+    margin-top: 26px;
+}
+.content__left_u {
+    font-family: "GOST UI 2";
+    font-style: normal;
+    font-size: 1.125em;
+    line-height: 20px;
+}
+@media only screen and (max-width: 430px) {
+    
 }

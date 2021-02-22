@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Шаг 2 отправка после формы паспорта
     const pasport = document.querySelector('.btn__form_step2');
     const formStep2 = document.querySelector('.form_step_2');
-    
+
 
     function step2() {
         document.querySelector('.form_3').style.display = 'none';
@@ -46,54 +46,41 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     pasport.addEventListener('click', step2);
-// шаг 3 отправка после всей формы 
-const step4_btn = document.querySelector('.btn__form_step3');
-let chec1 = document.querySelector('.check1');
-let chec2 = document.querySelector('.check2');
-const ch1 = document.querySelector('.form__contetn__chebox_1');
-const ch2 = document.querySelector('.form__contetn__chebox_2');
+    // шаг 3 отправка после всей формы 
+    const step4_btn = document.querySelector('.btn__form_step3');
 
-function bor1 () {
-    ch1.classList.add('greyBor');
-}
-function bor12 () {
-    ch1.classList.remove('greyBor');
-}
-function bor21 () {
-    ch2.classList.add('greyBor');
-}
-function bor2 () {
-    ch2.classList.remove('greyBor');
-}
-chec1.addEventListener('click', bor1);
-chec1.removeEventListener('click', bor12);
+    function stepFour() {
+        document.querySelector('.step3').classList.add('step4');
+        document.querySelector('.step4').classList.remove('step3');
+        document.querySelector('.row_1').style.display = 'none';
+        document.querySelector('.row_2_step').style.display = 'none';
+        document.querySelector('.conset__step3').style.display = 'none';
+        document.querySelector('.zayvka').style.display = 'grid';
+    }
 
-
-
-
-if(chec1.checked) {
-    bor1 ();
-} else {
-    bor12 ();
-}
-
-if(chec2.checked) {
-    ch2.classList.add('greyBor');
-} else {
-    ch2.classList.remove('greyBor');
-}
-
-function stepFour () {
-    document.querySelector('.step3').classList.add('step4');
-    document.querySelector('.step4').classList.remove('step3');
-    document.querySelector('.row_1').style.display = 'none';
-    document.querySelector('.row_2_step').style.display = 'none';
-    document.querySelector('.conset__step3').style.display = 'none';
-    document.querySelector('.zayvka').style.display = 'grid';
-}
-
-step4_btn.addEventListener('click', stepFour);
+    step4_btn.addEventListener('click', stepFour);
 
 })
 
-
+function border_b() {
+    let chec1 = document.getElementById('check1');
+    const ch1 = document.querySelector('.form__contetn__chebox_1');
+    if (chec1.checked) {
+        ch1.style.border = "2px solid #0061d9";
+        ch1.style.backgroundColor = "#ffffff";
+    } else {
+        ch1.style.border = "none";
+        ch1.style.backgroundColor = "#f5f5f7";
+    }
+}
+function border_b2() {
+    let chec2 = document.querySelector('.check2');
+    const ch2 = document.querySelector('.form__contetn__chebox_2');
+    if (chec2.checked) {
+        ch2.style.border = "2px solid #0061d9";
+        ch2.style.backgroundColor = "#ffffff";
+    } else {
+        ch2.style.border = "none";
+        ch2.style.backgroundColor = "#f5f5f7";
+    }
+}

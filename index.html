@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 
+	<!-- шрифты -->
+	<link href="//db.onlinewebfonts.com/c/5e25ac6068cc0bdc5e2e96c345e6760a?family=GOST+UI+2" rel="stylesheet"
+		type="text/css" />
 	<!-- style -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- перфиксы -->
@@ -22,14 +25,14 @@
 					<div class="content__left">
 						<img src="./image/Gerb.svg" alt="герб">
 					</div>
-					<div class="content__left">
+					<div class="content__left_u">
 						Услуги и сервисы Пермского края
 					</div>
 				</div>
 				<div class="content__2">
 					<div class="content__right"><img src="./image/person.svg" alt="персона"></div>
-					<div class="content__right">Константинопольский К.К</div>
-					<div class="content__right">Выйти</div>
+					<div class="content__right"> <a href="">Константинопольский К.К</a> </div>
+					<div class="content__right"> <a href="">Выйти</a> </div>
 					<div class="btn__mobil">&equiv;</div>
 				</div>
 			</div>
@@ -67,6 +70,7 @@
 					</div>
 					<!--  первая часть -->
 					<div class="form_1">
+						<div class="Name_mobil">Выбор заявителя</div>
 						<div class="form__circle color_b">
 							1
 						</div>
@@ -161,12 +165,12 @@
 							</div>
 							<div class="form__contetn__chebox">
 								<div class="form__contetn__chebox_1">
-									<input type="checkbox" class="check1">
+									<input type="checkbox" id="check1" onchange="border_b ()">
 									<div>Я подтверждаю свое согласие со всеми вышеперечисленными пунктами</div>
 								</div>
 								<div class="form__contetn__chebox_2">
-									<input type="checkbox" class="check2" checked="checked">
-									<div>Я подтверждаю свое согласие со всеми вышеперечисленными пунктами</div>
+									<input type="checkbox" class="check2" onchange="border_b2 ()">
+									<div>Я уведомлен о том, что результат будет получен в электронном виде</div>
 								</div>
 							</div>
 							<div class="form__contetn__kolokochik">
@@ -187,13 +191,15 @@
 						<span class="form__data_b">Заявление принято</span>
 						<div class="zayvka__desc">
 							<div class="desc_1">
-								Номер заявления <span class="desc_1_span">RU-1234567.</span>  Максимальный срок <br> предоставления услуги — 20 рабочих дней.
-								Следите за статусом <br> заявления в <a href="">Личном кабинете.</a> 
+								Номер заявления <span class="desc_1_span">RU-1234567.</span> Максимальный срок <br>
+								предоставления услуги — 20 рабочих дней.
+								Следите за статусом <br> заявления в <a href="">Личном кабинете.</a>
 
 							</div>
 							<br>
 							<div class="desc_2">
-								Если у вас остались вопросы по оказанию услуги, пожалуйста, <br> обращайтесь по телефону +7
+								Если у вас остались вопросы по оказанию услуги, пожалуйста, <br> обращайтесь по телефону
+								+7
 								(342) 123-45-67.
 
 							</div>
