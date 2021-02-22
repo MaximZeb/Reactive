@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -159,7 +160,7 @@ html {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: minmax(336px, 336px) minmax(1px, 2px) minmax(1fr, 1fr);
+  grid-template-rows: minmax(336px, 336px) minmax(1px, 2px) minmax(800px, 1fr);
   margin: 0 auto;
 }
 .content .head__content {
@@ -331,6 +332,10 @@ html {
   grid-template-rows: 24px 32px 24px 80px 16px 80px 16px 48px;
   grid-template-columns: 1fr;
   max-width: 448px;
+  font-family: "GOST UI 2";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125em;
 }
 
 .Name {
@@ -461,6 +466,10 @@ html {
   border: 1px solid rgba(59, 66, 86, 0.5);
   padding-left: 12px;
   border-radius: 4px;
+  font-family: "GOST UI 2";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125em;
 }
 .form_step_2 .form__contetn_1 {
   grid-column: 4;
@@ -469,6 +478,7 @@ html {
   display: grid;
   grid-template-rows: 24px 32px 24px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 24px 24px 16px 24px 8px 48px 16px 200px 16px 48px;
   max-width: 448px;
+  color: #3B4256;
 }
 .form_step_2 .form__contetn_1 .family {
   grid-row: 4;
@@ -499,12 +509,15 @@ html {
 }
 .form_step_2 .form__contetn_1 .telInp {
   grid-row: 22;
+  color: #3B4256;
 }
 .form_step_2 .form__contetn_1 .Document {
   grid-row: 24;
+  font-weight: bold;
 }
 .form_step_2 .form__contetn_1 .doc {
   grid-row: 26;
+  color: #3B4256;
 }
 .form_step_2 .form__contetn_1 .docInp {
   grid-row: 28;
@@ -523,18 +536,22 @@ html {
 .form_step_2 .form__contetn_1 .pasport__data .port__ser .pasport__ser {
   grid-row: 1;
   grid-column: 1;
+  color: #3B4256;
 }
 .form_step_2 .form__contetn_1 .pasport__data .port__ser .pasport__nom {
   grid-row: 1;
   grid-column: 3;
+  color: #3B4256;
 }
 .form_step_2 .form__contetn_1 .pasport__data .port__ser .serInp {
   grid-row: 3;
   grid-column: 1;
+  color: #3B4256;
 }
 .form_step_2 .form__contetn_1 .pasport__data .port__ser .nomInp {
   grid-row: 3;
   grid-column: 3;
+  color: #3B4256;
 }
 .form_step_2 .form__contetn_1 .btn__form_step2 {
   background: #0061d9;
@@ -560,34 +577,42 @@ html {
   display: grid;
   grid-template-columns: 120px 16px 120px 16px 176px;
   grid-template-rows: 24px 24px 8px 48px;
+  color: #3B4256;
 }
 .Data .Data_where {
   grid-row: 1;
   grid-column: 1;
+  color: #3B4256;
 }
 .Data .Data__m {
   grid-row: 2;
   grid-column: 3;
+  color: #848E99;
 }
 .Data .Data__y {
   grid-row: 2;
   grid-column: 5;
+  color: #848E99;
 }
 .Data .Data__d {
   grid-row: 2;
   grid-column: 1;
+  color: #848E99;
 }
 .Data .Data__day {
   grid-row: 4;
   grid-column: 1;
+  color: #3B4256;
 }
 .Data .Data__month {
   grid-row: 4;
   grid-column: 3;
+  color: #3B4256;
 }
 .Data .Data__yarh {
   grid-row: 4;
   grid-column: 5;
+  color: #3B4256;
 }
 
 .step3 {
@@ -719,8 +744,6 @@ html {
   grid-row: 3;
   max-width: 736px;
   margin-top: 40px;
-  justify-content: center;
-  align-items: center;
 }
 
 @media only screen and (max-width: 1070px) {
@@ -741,15 +764,18 @@ html {
   border-radius: 4px;
   background-color: #f5f5f7;
 }
-.form__contetn__chebox_1 input {
+.form__contetn__chebox_1 .check1_div {
   grid-row: 2;
   grid-column: 2;
   cursor: pointer;
-  background: #0061d9;
 }
 .form__contetn__chebox_1 div {
   grid-row: 2;
   grid-column: 4;
+  font-family: "GOST UI 2";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125em;
 }
 
 .form__contetn__chebox_2 {
@@ -760,7 +786,7 @@ html {
   border-radius: 4px;
   background-color: #f5f5f7;
 }
-.form__contetn__chebox_2 input {
+.form__contetn__chebox_2 .check2_div {
   grid-row: 2;
   grid-column: 2;
   cursor: pointer;
@@ -768,6 +794,10 @@ html {
 .form__contetn__chebox_2 div {
   grid-row: 2;
   grid-column: 4;
+  font-family: "GOST UI 2";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125em;
 }
 
 .check1:checked {
@@ -941,4 +971,32 @@ html {
   font-style: normal;
   font-size: 1.125em;
   line-height: 20px;
+}
+
+input[type=checkbox] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  outline: none;
+  content: none;
+}
+
+input[type=checkbox]:before {
+  font-family: "FontAwesome";
+  content: "";
+  font-size: 13px;
+  color: transparent !important;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 1px;
+}
+
+input[type=checkbox]:checked:before {
+  background: #0061d9 !important;
+  color: white !important;
 }

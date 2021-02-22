@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
 	<!-- шрифты -->
 	<link href="//db.onlinewebfonts.com/c/5e25ac6068cc0bdc5e2e96c345e6760a?family=GOST+UI+2" rel="stylesheet"
 		type="text/css" />
@@ -165,11 +166,17 @@
 							</div>
 							<div class="form__contetn__chebox">
 								<div class="form__contetn__chebox_1">
-									<input type="checkbox" id="check1" onchange="border_b ()">
+									<div class="check1_div">
+										<label for="checkbox_id"></label>
+										<input type="checkbox" id="checkbox_id" class="check1" onchange="border_b ()">
+									</div>
 									<div>Я подтверждаю свое согласие со всеми вышеперечисленными пунктами</div>
 								</div>
 								<div class="form__contetn__chebox_2">
-									<input type="checkbox" class="check2" onchange="border_b2 ()">
+									<div class="check2_div">
+										<label for="checkbox_id"></label>
+										<input type="checkbox" id="checkbox_id" class="check2" onchange="border_b2 ()">
+									</div>
 									<div>Я уведомлен о том, что результат будет получен в электронном виде</div>
 								</div>
 							</div>

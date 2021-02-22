@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
     pasport.addEventListener('click', step2);
     // шаг 3 отправка после всей формы 
     const step4_btn = document.querySelector('.btn__form_step3');
-
+    
     function stepFour() {
         document.querySelector('.step3').classList.add('step4');
         document.querySelector('.step4').classList.remove('step3');
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 function border_b() {
-    let chec1 = document.getElementById('check1');
+    let chec1 = document.querySelector('.check1');
     const ch1 = document.querySelector('.form__contetn__chebox_1');
     if (chec1.checked) {
         ch1.style.border = "2px solid #0061d9";
