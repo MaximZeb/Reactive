@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.row_2_step').style.display = 'none';
         document.querySelector('.conset__step3').style.display = 'none';
         document.querySelector('.zayvka').style.display = 'grid';
+        
     }
 
     step4_btn.addEventListener('click', stepFour);
@@ -68,6 +69,7 @@ function border_b() {
     if (chec1.checked) {
         ch1.style.border = "2px solid #0061d9";
         ch1.style.backgroundColor = "#ffffff";
+        document.querySelector('.check1').style.border = 'none';
     } else {
         ch1.style.border = "none";
         ch1.style.backgroundColor = "#f5f5f7";

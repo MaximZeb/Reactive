@@ -147,10 +147,11 @@ html {
 }
 @media only screen and (max-width: 430px) {
     .content {
+        grid-template-columns: 1fr;
         grid-template-rows:
             minmax(300px, 250px)
             minmax(1px, 2px)
-            minmax(250px, 200px);
+            minmax(1fr, 1fr);
     }
     .content .head__content {
         grid-template-columns: 1fr;
@@ -716,7 +717,7 @@ html {
         grid-template-columns: 16px 16px 48px 32px 1fr;
     }
     .conset__step3 .form__contetn_1 {
-        max-width: 290px;
+        max-width: 380px;
         grid-template-rows: 1px 1px 24px 1fr 24px 250px 1px 140px 16px 48px 16px 48px;
         grid-column-start: 3;
         grid-column-end: 6;
@@ -944,21 +945,22 @@ html {
         }
     }
     .form_step_2 {
+        grid-column: 1;
+        grid-row: 3;
         grid-template-columns: 16px 48px 16px 1fr 16px;
-        max-width: 340px;
     }
     .form_step_2 .form__contetn_1 {
         grid-column-start: 2;
         grid-column-end: 5;
-        max-width: 320px;
-        grid-template-rows: 24px 1px 1px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 24px 24px 16px 24px 8px 48px 16px 404px 16px 48px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 24px 1px 1px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 16px 24px 8px 48px 24px 24px 16px 24px 8px 48px 16px auto 16px 48px 16px;
         .Name {
             display: none;
         }
     }
-    .form__content_1 {
-        max-width: 340px;
-        grid-template-rows: minmax(80px, 80px) minmax(24px, 24px) minmax(1140px, 1140px) minmax(24px, 24px) minmax(
+    .content .form__content_1 {
+        grid-column: 1;
+        grid-template-rows: minmax(80px, 80px) minmax(24px, 24px) minmax(auto, auto) minmax(24px, 24px) minmax(
                 80px,
                 80px
             );
@@ -966,21 +968,87 @@ html {
     .form_step_2 .form__contetn_1 .pasport__data {
         grid-row: 30;
         display: grid;
-        grid-template-rows: 160px 16px 104px;
-        .form_step_2 .form__contetn_1 .pasport__data .port__ser {
-            grid-row: 1;
-            display: grid;
-            grid-template-columns: 1fr 16px;
-            grid-template-rows: 24px 8px 48px 24px 8px 48px;
-            .form_step_2 .form__contetn_1 .pasport__data .port__ser .pasport__nom {
-                grid-row: 4;
-                grid-column: 1;
-            }
-            .form_step_2 .form__contetn_1 .pasport__data .port__ser .nomInp {
-                grid-row: 6;
-                grid-column: 1;
-            }
-        }
+        grid-column: 1;
+        grid-template-rows: auto 16px auto;
+    }
+    .form_step_2 .form__contetn_1 .pasport__data .port__ser {
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 24px 8px 48px 10px 24px 8px 48px;
+    }
+    .form_step_2 .form__contetn_1 .pasport__data .port__ser .pasport__nom {
+        grid-row: 5;
+        grid-column: 1;
+    }
+    .form_step_2 .form__contetn_1 .pasport__data .port__ser .nomInp {
+        grid-row: 7;
+        grid-column: 1;
+    }
+    .form_step_2 .form__contetn_1 .family {
+        grid-column: 1;
+    }
+    .form_step_2 .form__contetn_1 .famInp {
+        grid-column: 1;
+    }
+    .form_step_2 .form__contetn_1 .name {
+        grid-column: 1;
+    }
+    .form_step_2 .form__contetn_1 .namInp {
+        grid-column: 1;
+    }
+    .form_step_2 .form__contetn_1 .patronymic {
+        grid-column: 1;
+    }
+    .form_step_2 .form__contetn_1 .patronymicInp {
+        grid-column: 1;
+    }
+    .form_step_2 .form__contetn_1 .email {
+        grid-column: 1;
+    }
+    .form_step_2 .form__contetn_1 .emailInp {
+        grid-column: 1;
+    }
+    .form_step_2 .form__contetn_1 .tel {
+        grid-column: 1;
+    }
+    .form_step_2 .form__contetn_1 .telInp {
+        grid-column: 1;
+    }
+    .form_step_2 .form__contetn_1 .Document {
+        grid-column: 1;
+    }
+    .form_step_2 .form__contetn_1 .doc {
+        grid-column: 1;
+    }
+    .form_step_2 .form__contetn_1 .docInp {
+        grid-column: 1;
+    }
+    .Data {
+        grid-row: 3;
+        grid-column: 1;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 24px 24px 1px 48px  8px 24px 8px 48px  8px 24px 8px 48px;
+        color: #3b4256;
+    }
+    .Data .Data__m {
+        grid-column: 1;
+        grid-row: 6;
+    }
+    .Data .Data__y {
+        grid-column: 1;
+        grid-row: 10;
+    }
+    .Data .Data__month {
+        grid-column: 1;
+        grid-row: 8;
+    }
+    .Data .Data__yarh {
+        grid-column: 1;
+        grid-row: 12;
     }
 }
 .Name_mobil {
@@ -1034,8 +1102,8 @@ input[type="checkbox"]:checked:before {
         grid-column: 1;
         height: 500px;
         width: 100%;
-        max-width: 320px;
-        grid-template-columns: 10px 48px 32px 216px 10px;
+
+        grid-template-columns: 10px 48px 32px auto 10px;
         grid-template-rows: 24px 32px 26px 240px 16px 48px 16px 48px 16px;
         background-color: #ffffff;
         .zayvka__desc {
